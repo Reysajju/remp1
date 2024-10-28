@@ -176,7 +176,7 @@ section{
 }
 
 .box {
-    background-image: url('https://example.com/background-image.jpg');
+    background-image: url('../images/nikkah.jpeg');
     background-size: cover;
     background-position: center;
     height: 200px;  /* adjust height as needed */
