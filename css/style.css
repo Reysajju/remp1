@@ -322,53 +322,97 @@ section{
     color:var(--main-color);
     padding-right: .5rem;
 }
-
-.reivew .box{
-    border-radius: .5rem;
+.reivew {
+    padding: 2rem;
+  }
+  
+  .reivew .box {
+    border-radius: 0.5rem;
     background: #333;
-    padding:2rem;
+    padding: 2rem;
     position: relative;
-}
-
-.reivew .box .fa-quote-right{
+    max-width: 400px; /* adjust the max-width as needed */
+    margin: 0 auto;
+  }
+  
+  .reivew .box .fa-quote-right {
     position: absolute;
-    top:2rem; right: 2rem;
-    color:var(--main-color);
+    top: 2rem;
+    right: 2rem;
+    color: var(--main-color);
     font-size: 5rem;
-}
-
-.reivew .box .user{
+  }
+  
+  .reivew .box .user {
     display: flex;
     align-items: center;
-    gap:1.5rem;
+    gap: 1.5rem;
     padding-bottom: 1rem;
-}
-
-.reivew .box .user img{
-    height:7rem;
+  }
+  
+  .reivew .box .user img {
+    height: 7rem;
     width: 7rem;
     border-radius: 50%;
     object-fit: cover;
-}
-
-.reivew .box .user h3{
+  }
+  
+  .reivew .box .user h3 {
     font-size: 2rem;
-    color:#fff;
-}
-
-.reivew .box .user span{
+    color: #fff;
+  }
+  
+  .reivew .box .user span {
     font-size: 1.5rem;
-    color:#eee;
-}
-
-.reivew .box p{
+    color: #eee;
+  }
+  
+  .reivew .box p {
     line-height: 2;
-    color:#eee;
-    padding:.5rem 0;
+    color: #eee;
+    padding: 0.5rem 0;
     font-size: 1.6rem;
-}
-
-.contact form{
+  }
+  
+  /* Responsive styles */
+  
+  @media (max-width: 768px) {
+    .reivew .box {
+      padding: 1.5rem;
+    }
+    .reivew .box .user img {
+      height: 5rem;
+      width: 5rem;
+    }
+    .reivew .box .user h3 {
+      font-size: 1.8rem;
+    }
+    .reivew .box .user span {
+      font-size: 1.2rem;
+    }
+    .reivew .box p {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .reivew .box {
+      padding: 1rem;
+    }
+    .reivew .box .user img {
+      height: 4rem;
+      width: 4rem;
+    }
+    .reivew .box .user h3 {
+      font-size: 1.6rem;
+    }
+    .reivew .box .user span {
+      font-size: 1rem;
+    }
+    .reivew .box p {
+      font-size: 1.2rem;
+    }
+  }.contact form{
     max-width: 70rem;
     margin:1rem auto;
     text-align: center;
