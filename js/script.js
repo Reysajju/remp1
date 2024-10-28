@@ -47,16 +47,24 @@ var swiper = new Swiper(".home-slider", {
   }
 });
 
-var swiper = new Swiper(".review-slider .swiper", {
+var swiper = new Swiper(".review-slider", {
     slidesPerView: 1,
-    spaceBetween: 0,
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+    grabCursor: true,
+    loop:true,
+    spaceBetween: 10,
+    breakpoints: {
+      0: {
+          slidesPerView: 1,
+      },
+      700: {
+        slidesPerView: 2,
+      },
+      1050: {
+        slidesPerView: 3,
+      },    
     },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+    autoplay:{
+      delay: 5000,
+      disableOnInteraction:false,
+  }
 });

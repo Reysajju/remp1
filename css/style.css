@@ -35,7 +35,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background: #222;
+    background: #664761;
 }
 
 section{
@@ -109,10 +109,6 @@ section{
     display: none;
 }
 
-.home{
-    padding: 0 9%;
-}
-
 .home .content{
     text-align: center;
     padding-top: 6rem;
@@ -131,24 +127,11 @@ section{
     text-transform: uppercase;
 }
 
-.home .home-slider {
-    overflow: hidden;
-    width: 100%;
-    margin: 0 auto;
-}
-
 .home .home-slider .swiper-slide{
     overflow: hidden;
     border-radius: .5rem;
-    height: 50rem;
-    width: 35rem;
-}
-
-@media (max-width: 768px) {
-    .home .home-slider .swiper-slide {
-        width: 100%;
-        padding: 0 2rem;
-    }
+    height: 68rem;
+    width:40rem;
 }
 
 .home .home-slider .swiper-slide img{
@@ -191,6 +174,7 @@ section{
     color:#eee;
     line-height: 1.8;
 }
+
 .about .row{
     display: flex;
     align-items: center;
@@ -223,6 +207,11 @@ section{
     color:#eee;
     padding:1rem 0;
     line-height: 2;
+}
+.swiper-wrapper{
+    
+    padding: 2%;
+
 }
 
 .gallery .box-container{
@@ -333,72 +322,52 @@ section{
     padding-right: .5rem;
 }
 
-.review-slider {
-    padding: 2rem 9%;
-}
-
-.review-slider .swiper-slide {
-    overflow: hidden;
-    border-radius: 0.5rem;
-    height: auto;
-    width: 100%;
-    padding: 2rem;
-}
-
-.review-slider .review {
+.reivew .box{
+    border-radius: .5rem;
     background: #333;
-    padding: 2rem;
-    text-align: center;
+    padding:2rem;
+    position: relative;
 }
 
-.review-slider .review .user {
+.reivew .box .fa-quote-right{
+    position: absolute;
+    top:2rem; right: 2rem;
+    color:var(--main-color);
+    font-size: 5rem;
+}
+
+.reivew .box .user{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    gap:1.5rem;
+    padding-bottom: 1rem;
 }
 
-.review-slider .review .user img {
-    height: 7rem;
+.reivew .box .user img{
+    height:7rem;
     width: 7rem;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1rem;
 }
 
-.review-slider .review .user h3 {
+.reivew .box .user h3{
     font-size: 2rem;
-    color: #fff;
+    color:#fff;
 }
 
-.review-slider .review .user span {
+.reivew .box .user span{
     font-size: 1.5rem;
-    color: #eee;
+    color:#eee;
 }
 
-.review-slider .review p {
+.reivew .box p{
     line-height: 2;
-    color: #eee;
-    padding: 2rem 0;
+    color:#eee;
+    padding:.5rem 0;
     font-size: 1.6rem;
 }
 
-@media (max-width: 768px) {
-    .review-slider .review {
-        padding: 1.5rem;
-    }
-    .review-slider .review .user img {
-        height: 5rem;
-        width: 5rem;
-    }
-    .review-slider .review .user h3 {
-        font-size: 1.8rem;
-    }
-    .review-slider .review p {
-        font-size: 1.4rem;
-    }
-}
-
-}.contact form{
+.contact form{
     max-width: 70rem;
     margin:1rem auto;
     text-align: center;
