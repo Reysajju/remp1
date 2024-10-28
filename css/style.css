@@ -175,25 +175,6 @@ section{
     line-height: 1.8;
 }
 
-.box {
-    background-image: url('../images/nikkah.jfif');
-    background-size: cover;
-    background-position: center;
-    height: 200px;  /* adjust height as needed */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #000;  /* text color */
-  }
-  
-  .box-content {
-    text-align: center;
-  }
-  
-  .box:hover {
-    opacity: 0.8;  /* add hover effect */
-  }
 
 .about .row{
     display: flex;
